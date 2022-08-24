@@ -2,7 +2,7 @@
    Complete the below for code reviewers' convenience:
 
    Code repository: https://github.com/Yanyshpolska/a-tiny-JS-world
-   Web app: _put project's github pages URL here_
+   Web app: https://yanyshpolska.github.io/a-tiny-JS-world/
    */
 
 // ======== OBJECTS DEFINITIONS ========
@@ -57,14 +57,3 @@ inhabitants.map((inhabitant) => {
   keys.forEach((key) => arr.push(inhabitant[key]));
   print(arr.join("; "));
 });
-
-// First try :)
-// let arr = [];
-// for (let i = 0; i < inhabitants.length; i += 1) {
-//   for (let j = 0; j < keys.length; j += 1) {
-//     //  console.log(inhabitants[i][keys[j]]);
-//     arr.push(inhabitants[i][keys[j]]);
-//   }
-//   print(arr.join("; "));
-//   arr = [];
-// }
