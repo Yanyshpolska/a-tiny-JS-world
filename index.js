@@ -21,8 +21,8 @@ class Inhabitant {
 class Human extends Inhabitant {
   hands = 2;
   legs = 2;
-  constructor(name, type, saying, sex) {
-    super(name, type, saying, sex);
+  constructor(name, saying, sex) {
+    super(name, saying, sex);
   }
   getInfo() {
     return [...super.getInfo(), this.hands, this.legs];
@@ -32,8 +32,8 @@ class Human extends Inhabitant {
 class Animal extends Inhabitant {
   tail = 1;
   legs = 4;
-  constructor(name, type, saying, sex) {
-    super(name, type, saying, sex);
+  constructor(name, saying, sex) {
+    super(name, saying, sex);
   }
   getInfo() {
     return [...super.getInfo(), this.tail, this.legs];
@@ -41,14 +41,14 @@ class Animal extends Inhabitant {
 }
 
 class Cat extends Animal {
-  constructor(name, type, saying, sex, legs, tail) {
-    super(name, type, saying, sex, legs, tail);
+  constructor(name, saying, sex, legs, tail) {
+    super(name, saying, sex, legs, tail);
   }
 }
 
 class Dog extends Animal {
-  constructor(name, type, saying, sex, legs, tail) {
-    super(name, type, saying, sex, legs, tail);
+  constructor(name, saying, sex, legs, tail) {
+    super(name, saying, sex, legs, tail);
   }
 }
 
